@@ -1,0 +1,181 @@
+<index.html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> No Violencia</title>
+    <!-- Fuentes para el estilo de tiza y escritura a mano -->
+    <link href="https://fonts.googleapis.com/css2?family=Short+Stack&family=Permanent+Marker&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- ESTILOS CSS --- */
+        body {
+            background-color: #2c2c2c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Short Stack', cursive;
+        }
+
+        .pizarron {
+            background-color: #1e1e1e; /* Fondo de pizarra */
+            width: 95%;
+            max-width: 1000px;
+            padding: 40px;
+            border: 15px solid #5d4037; /* Marco de madera */
+            border-radius: 10px;
+            box-shadow: inset 0 0 50px #000, 0 20px 40px rgba(0,0,0,0.5);
+            color: white;
+            text-align: center;
+        }
+
+        .titulo-escolar {
+            font-family: 'Permanent Marker', cursive;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            color: #ffeb3b; /* Amarillo tiza */
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 0px #856404;
+        }
+
+        .subtitulo {
+            font-size: 1.1rem;
+            color: #e0e0e0;
+            border-bottom: 1px dashed #ffffff55;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        /* Contenedor para tus 2 imágenes */
+        .galeria-imagenes {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .foto-escolar {
+            background: #fff;
+            padding: 10px 10px 30px 10px;
+            box-shadow: 5px 10px 20px rgba(0,0,0,0.3);
+            transform: rotate(-2deg); /* Efecto de foto pegada chueca */
+            transition: 0.3s;
+        }
+
+        .foto-escolar:nth-child(2) {
+            transform: rotate(3deg);
+        }
+
+        .foto-escolar:hover {
+            transform: rotate(0deg) scale(1.05);
+            z-index: 10;
+        }
+
+        .foto-escolar img {
+            width: 280px;
+            height: 200px;
+            object-fit: cover;
+            border: 1px solid #ddd;
+        }
+
+        /* Contenedor para tus 3 botones */
+        .botones-contenedor {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .nota-pegada {
+            background-color: #fffef0; /* Color papel */
+            color: #333;
+            width: 220px;
+            padding: 25px 15px;
+            border: none;
+            position: relative;
+            box-shadow: 3px 5px 10px rgba(0,0,0,0.3);
+            cursor: pointer;
+            font-family: 'Short Stack', cursive;
+            transition: transform 0.2s;
+        }
+
+        .nota-pegada:hover {
+            transform: translateY(-5px);
+            background-color: #ffffd0;
+        }
+
+        .nota-pegada h3 {
+            margin: 10px 0;
+            font-size: 1.2rem;
+            color: #d32f2f;
+        }
+
+        /* Tachuelas de colores */
+        .tachuela {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            position: absolute;
+            top: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .roja { background: #ff5252; box-shadow: 0 2px #b71c1c; }
+        .azul { background: #448aff; box-shadow: 0 2px #1976d2; }
+        .verde { background: #4caf50; box-shadow: 0 2px #2e7d32; }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.8rem;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="pizarron">
+        <header>
+            <h1 class="titulo-escolar">Alto a la violencia</h1>
+            <p class="subtitulo">paremos ahora con la violencia.</p>
+        </header>
+
+        <main>
+            <!-- Aquí están tus 2 imágenes -->
+            <section class="galeria-imagenes">
+                <div class="foto-escolar">
+                    <img src="VIOLENCIA.jpg" alt="Imagen Paz 1">
+                </div>
+                <div class="foto-escolar">
+                    <img src="Violencia.4.jpg" alt="Imagen Paz 2">
+                </div>
+            </section>
+
+            <!-- Aquí están tus 3 botones -->
+            <section class="botones-contenedor">
+                <button class="nota-pegada">
+                    <span class="tachuela roja"></span>
+                <h3> <a href="Causasdelanoviolencia.html">Visitar a causas de la violencia.</a> </h3>  
+                </button>
+
+                <button class="nota-pegada">
+                    <span class="tachuela azul"></span>
+                    <h3> <a href="Violencia.escolar.html">Visitar a violencia escolar.</a> </h3>  
+                </button>
+
+                <button class="nota-pegada">
+                    <span class="tachuela verde"></span>
+                   <h3> <a href="VIOLENCIA10.html">Visitar a como evitar la violencia.</a> </h3> 
+                </button>
+            </section>
+        </main>
+
+        <footer>
+            <p> michelle silva </p>
+        </footer>
+    </div>
+
+</body>
+</html>
